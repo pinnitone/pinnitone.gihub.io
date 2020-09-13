@@ -1,6 +1,17 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/go,node,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=go,node,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,node,macos,hugo
+
+### Hugo ###
+# Generated files by hugo
+/docs/
+/resources/_gen/
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
 
 ### Go ###
 # Binaries for programs and plugins
