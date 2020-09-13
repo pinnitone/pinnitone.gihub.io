@@ -1,0 +1,9 @@
+:root {
+  --site-max-width: 1000px;
+  --site-margin: 50px;
+  --link-color: #2fbeff;
+  --nav-link-color: #868e96;
+  --headline-color: #434c55;
+  --text-color: #868e96;
+  --background-color: rgb(248, 249, 250);
+}
