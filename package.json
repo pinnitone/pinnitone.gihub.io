@@ -1,0 +1,30 @@
+{
+  "name": "pinnitone.gihub.io",
+  "version": "1.0.0",
+  "description": "Static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinnitone/pinnitone.gihub.io.git"
+  },
+  "keywords": [
+    "Hugo",
+    "static",
+    "site",
+    "postcss"
+  ],
+  "author": "Alexander Vu <alexander.vu.tuyet@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinnitone/pinnitone.gihub.io/issues"
+  },
+  "homepage": "https://github.com/pinnitone/pinnitone.gihub.io#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "postcss-cli": "^7.1.2",
+    "precss": "^4.0.0"
+  }
+}

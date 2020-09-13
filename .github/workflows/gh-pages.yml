@@ -2,9 +2,9 @@ name: github pages
 
 on:
   push:
-    branches: [ master, gh-pages ]  # Set a branch to deploy
+    branches: [ master ]  # Set a branch to deploy
   pull_request:
-    branches: [ master, gh-pages ]
+    branches: [ master ]
 
 jobs:
   deploy:
@@ -14,7 +14,12 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
+      
+      - name: Install PostCSS
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+      - run: npm install
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -28,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./docs

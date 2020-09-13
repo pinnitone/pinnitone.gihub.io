@@ -1,0 +1,20 @@
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+<!-- Place favicon.ico in the root directory -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap">
+{{ $styleMain := resources.Get "css/main.css" | minify | fingerprint }}
+{{ $styleNormalize := resources.Get "css/normalize.css" | minify | fingerprint }}
+{{ $style := resources.Get "css/style.css" | resources.PostCSS (dict "noMap" true) | fingerprint }}
+<link rel="stylesheet" href="{{ $styleNormalize.Permalink }}">
+<link rel="stylesheet" href="{{ $styleMain.Permalink }}">
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<meta name="theme-color" content="#fafafa">
