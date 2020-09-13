@@ -1,3 +1,3 @@
-# pinnitone.gihub.io
+# pinnitone.github.io
 
 Web presentation
